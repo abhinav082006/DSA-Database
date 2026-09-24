@@ -1,0 +1,19 @@
+  :rtype: int
+        """
+        if n ==  0:
+            return 1
+        mem = {}
+        def build(start , end):
+            if start > end:
+                return 1
+            if (start,end) in mem:
+                return mem[(start,end)]
+            count = 0
+            for root in range(start,end+1):
+                left_tree = build(start , root - 1)
+                right_tree = build(root+1 , end)
+
+                count += left_tree*right_tree
+                mem[(start,end)] = count
+            return count
+        return build(1,n)
