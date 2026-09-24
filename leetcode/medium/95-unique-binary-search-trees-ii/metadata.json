@@ -1,0 +1,26 @@
+{
+  "title": "Unique Binary Search Trees II",
+  "titleSlug": "unique-binary-search-trees-ii",
+  "frontendQuestionId": "95",
+  "leetcodeUrl": "https://leetcode.com/problems/unique-binary-search-trees-ii/",
+  "difficulty": "Medium",
+  "topics": [
+    "Dynamic Programming",
+    "Backtracking",
+    "Tree",
+    "Binary Search Tree",
+    "Binary Tree"
+  ],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-09-24T13:40:43.015Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-09-24T13:40:44.915Z"
+}

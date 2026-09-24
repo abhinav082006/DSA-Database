@@ -1,0 +1,28 @@
+self.val = val
+#         self.left = left
+#         self.right = right
+class Solution(object):
+    def generateTrees(self, n):
+        """
+        :type n: int
+        :rtype: List[Optional[TreeNode]]
+        """
+        if n == 0:
+            return []
+        def build(start,end):
+            if start > end:
+                return [None]
+            tree = []
+            for root in range(start , end+1):
+                left_tree = build(start , root-1)
+                right_tree = build(root+1,end)
+                for left in left_tree:
+                    for right in right_tree:
+                        node = TreeNode(root)
+                        node.left = left
+                        node.right = right
+                        tree.append(node)
+            return tree
+        return build(1,n)
+
+        
