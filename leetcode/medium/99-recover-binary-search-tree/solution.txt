@@ -1,0 +1,22 @@
+ = val
+#         self.left = left
+#         self.right = right
+class Solution(object):
+    def recoverTree(self, root):
+        """
+        :type root: Optional[TreeNode]
+        :rtype: None Do not return anything, modify root in-place instead.
+        """
+        nodes = []
+        def inorder(node):
+            if not node:
+                return
+            inorder(node.left)
+            nodes.append(node)
+            inorder(node.right)
+        inorder(root)
+        values = sorted(node.val for node in nodes)
+        for i in range(len(nodes)):
+            nodes[i].val = values[i]
+
+
