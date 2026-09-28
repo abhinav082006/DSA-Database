@@ -1,0 +1,17 @@
+class Solution(object):
+    def maxDepth(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        MaxCounter = 0
+        counter = 0
+        for x in s:
+            if x == "(":
+                counter += 1
+            if x == ")":
+                counter -= 1
+            MaxCounter = max(MaxCounter , counter)
+        return MaxCounter
+        
+            
