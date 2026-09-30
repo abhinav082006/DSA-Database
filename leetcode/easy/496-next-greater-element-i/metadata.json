@@ -1,0 +1,25 @@
+{
+  "title": "Next Greater Element I",
+  "titleSlug": "next-greater-element-i",
+  "frontendQuestionId": "496",
+  "leetcodeUrl": "https://leetcode.com/problems/next-greater-element-i/",
+  "difficulty": "Easy",
+  "topics": [
+    "Array",
+    "Hash Table",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-09-30T10:16:18.476Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-09-30T10:16:20.592Z"
+}

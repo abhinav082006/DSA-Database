@@ -1,0 +1,17 @@
+     
+        m = len(nums1)
+        n = len(nums2)
+        ans = [0]*m
+        for i in range(m):
+            for j in range(n):
+                if nums1[i] == nums2[j]:
+                    if j == n-1:
+                        ans[i] = -1
+                    for k in range(j+1,n):
+                        if nums2[k] > nums2[j]:
+                            ans[i] = nums2[k]
+                            break
+                        else:
+                            ans[i] = -1
+        return ans
+
