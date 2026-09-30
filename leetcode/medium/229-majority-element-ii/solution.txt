@@ -1,0 +1,22 @@
+class Solution(object):
+    def majorityElement(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        ans = set()
+        candidate = None
+        cou = dict()
+        n = len(nums)
+        for num in nums:
+            if num not in cou:
+                cou[num] = 1
+            else:
+                cou[num] += 1
+            if cou[num] > n//3:
+                ans.add(num)
+        return list(ans)
+
+
+
+        
