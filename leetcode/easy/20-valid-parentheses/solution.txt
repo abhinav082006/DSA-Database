@@ -1,0 +1,24 @@
+     return False
+        for x in s:
+            if x == "(" or x == "[" or x == "{":
+                stack.append(x) 
+            if x == ")" :
+                if stack and  stack[-1] == "(":
+                    stack.pop()
+                else:
+                    stack.append(x)
+            if x == "]":
+                if stack and stack[-1] == "[":
+                    stack.pop()
+                else:
+                    stack.append(x)
+            if x == "}":
+                if stack and  stack[-1] == "{":
+                    stack.pop()
+                else:
+                    stack.append(x)
+        return len(stack) == 0
+        
+            
+            
+            
