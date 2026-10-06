@@ -1,0 +1,17 @@
+class Solution(object):
+    def minAddToMakeValid(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        stack1 = []
+        stack2 = []
+        for x in s:
+            if x == "(":
+                stack1.append(x)
+            if stack1 and x == ")":
+                stack1.pop()
+            elif not stack1 and x == ")":
+                stack2.append(x)
+            
+        return len(stack1) + len(stack2)
