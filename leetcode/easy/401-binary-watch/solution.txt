@@ -1,0 +1,16 @@
+minute):
+            if turned == turnedOn:
+                if hour < 12 and minute < 60:
+                    ans.append(str(hour) + ':' + str(minute).zfill(2))
+                    return 
+            if turned > turnedOn or ind == 10:
+                return
+            if ind < 4:
+                backtrack(ind+1,turned+1 , hour + hours[ind] , minute)
+            else:
+                backtrack(ind+1 , turned+1 , hour , minute + minutes[ind - 4])
+            
+            backtrack(ind + 1,turned,hour , minute)
+        backtrack(0,0,0,0)
+        return ans
+

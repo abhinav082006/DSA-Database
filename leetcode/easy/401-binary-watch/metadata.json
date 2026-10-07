@@ -1,0 +1,23 @@
+{
+  "title": "Binary Watch",
+  "titleSlug": "binary-watch",
+  "frontendQuestionId": "401",
+  "leetcodeUrl": "https://leetcode.com/problems/binary-watch/",
+  "difficulty": "Easy",
+  "topics": [
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-10-07T09:34:45.698Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-10-07T09:34:47.807Z"
+}
