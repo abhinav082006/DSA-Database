@@ -1,0 +1,23 @@
+class Solution(object):
+    def maxSum(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        MOD = 10**9 + 7
+        counts = [0] * 30
+        for num in nums:
+            for bit in range(30):
+                if ((num//2**bit)%2) == 1:
+                    counts[bit] += 1
+        ans = 0
+        for i in range(k):
+            num = 0
+            for bit in range(30):
+                if  counts[bit] > 0:
+                    num += 2**bit
+                    counts[bit] -= 1
+            ans = (ans + num*num)%MOD
+        return ans
+        
