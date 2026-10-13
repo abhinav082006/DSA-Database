@@ -1,0 +1,20 @@
+import math
+class Solution(object):
+    def maxAlternatingSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        n = len(nums)
+        nums = sorted([abs(x) for x in nums], reverse=True)
+
+        k = (n + 1) // 2
+        ans = 0
+
+        for i in range(k):
+            ans += nums[i] ** 2
+
+        for i in range(k, n):
+            ans -= nums[i] ** 2
+
+        return ans
