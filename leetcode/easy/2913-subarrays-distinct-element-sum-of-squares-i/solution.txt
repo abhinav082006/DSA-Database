@@ -1,0 +1,20 @@
+class Solution(object):
+    def sumCounts(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        ans = 0
+        n = len(nums)
+        for i in range(n):
+            sub = []
+            for j in range(i,n):
+                sub.append(nums[j])
+                b = set(sub)
+                l = len(b)
+                ans += l**2
+        return ans
+
+            
+
+        
