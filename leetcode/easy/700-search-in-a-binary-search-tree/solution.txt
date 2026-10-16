@@ -1,0 +1,3 @@
+rn self.searchBST(root.left,val)
+        elif val > root.val:
+            return self.searchBST(root.right,val)
