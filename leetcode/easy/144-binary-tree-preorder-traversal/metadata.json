@@ -1,0 +1,25 @@
+{
+  "title": "Binary Tree Preorder Traversal",
+  "titleSlug": "binary-tree-preorder-traversal",
+  "frontendQuestionId": "144",
+  "leetcodeUrl": "https://leetcode.com/problems/binary-tree-preorder-traversal/",
+  "difficulty": "Easy",
+  "topics": [
+    "Stack",
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "language": "Unknown",
+  "verdict": "Accepted",
+  "submissionId": null,
+  "submittedAt": "2026-10-16T16:44:32.531Z",
+  "runtimeMs": null,
+  "memoryKb": null,
+  "totalCorrect": null,
+  "totalTestcases": null,
+  "helpType": "PENDING_SELF_REPORT",
+  "helpLabel": "Pending self report",
+  "focusSeconds": null,
+  "syncedAt": "2026-10-16T16:44:34.726Z"
+}
