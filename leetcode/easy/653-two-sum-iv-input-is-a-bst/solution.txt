@@ -1,0 +1,4 @@
+rue
+            s.add(node.val)
+            return dfs(node.right) or dfs(node.left)
+        return dfs(root)
