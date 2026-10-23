@@ -1,0 +1,21 @@
+class Solution(object):
+    def sortPermutation(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        n  = len(nums)
+        ans = 0
+        count = 0
+        if nums == sorted(nums):
+            return 0
+        for i in range(n):
+            if nums[i] == i:
+                continue
+            if nums[i] != i:
+                while count < 2:
+                    ans = ans | nums[i]
+                    count += 1
+                ans &= nums[i]
+        return ans
+               
