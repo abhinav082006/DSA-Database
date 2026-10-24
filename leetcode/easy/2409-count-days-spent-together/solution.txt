@@ -1,0 +1,4 @@
+(convert(leaveAlice),convert(leaveBob))
+        return max(0,end-start+1)
+
+        
