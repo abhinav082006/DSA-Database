@@ -1,0 +1,19 @@
+class Solution(object):
+    def canAliceWin(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        m = 10
+
+        while n >= m:
+            n -= m
+            m -= 1
+
+            if n < m:
+                return True
+
+            n -= m
+            m -= 1
+
+        return False
